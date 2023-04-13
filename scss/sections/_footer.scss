@@ -1,0 +1,63 @@
+@use '../custom' as *;
+
+.footer{
+    padding-top:1rem;
+    background-color: $indigo;
+    color:$white;
+}
+
+.socials-holder{
+    font-size:2rem;
+}
+
+.contact-us{
+    background-color: $primary;
+}
+
+// Contact details styling
+.contact-holder{
+    position:relative;
+
+    &__icon{
+        font-size:2rem;
+        color:$white;
+        padding-top:0.3rem;
+    }
+
+    &__info{
+
+        &--title{
+            font-size:1.2rem;
+            margin-bottom:0.2rem;
+            color:$white;
+        }
+
+        &--subtitle{
+            font-size:1rem;
+            color:$gray-300;
+        }
+    }
+}
+
+// Style the footer links
+.footer-list{
+   display:block;
+   list-style-type:none;
+   position:relative;
+
+   li{
+    margin-bottom:0.5rem;
+    text-decoration:none;
+
+    a{
+        text-decoration:none;
+        color:$white;
+
+        &:hover{
+            text-decoration:underline;
+            color:$secondary;
+        }
+    }
+   }
+
+}
